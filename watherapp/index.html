@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: aliceblue;
+        }
+        .main-con {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .header {
+            width: 100%;
+            height: 7vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #264653;
+        }
+
+        .header h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .search-bar {
+            width: 100%;
+            height: 7vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #000;
+
+        }
+
+        .search-box {
+            width: 30%;
+        }
+
+        input {
+            width: 100%;
+            color: #000;
+        }
+        .search-button {
+            width: 50%;
+            
+        }
+
+        .weather-main {
+            /* position: relative;
+            top: 100px; */
+            width: 100%;
+            height: 50%;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .temp {
+            width: 90%;
+            height: 90%;
+            background: #264653;
+            border-radius: 10px;
+            border: 1px solid whitesmoke;
+        }
+
+        .city-name {
+            width: 100%;
+            height: 7vh;
+            outline: 0px;
+            padding: 0;
+            /* background: #000; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .city-name p {
+            width: 100%;
+            height: 100%;
+            font-size: 20px;
+            /* color: #264653; */
+            text-align: center;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .min-max {
+            width: 100%;
+            height: 6vh;
+            /* background: blueviolet; */
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 10px;
+            align-items: start;
+            box-sizing: border-box;
+        }
+        .clear{
+            display: flex;
+            width: 100%;
+            height: 5vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .clear p{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .img{
+            /* background: #000; */
+            width: 100%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .temp-c{
+            width: 100%;
+            height: 7vh;
+            /* background: #000; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .temp-c p{
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="main-con">
+        <div class="header">
+            <h3>WEATHER</h3>
+        </div>
+        <div class="search-bar">
+            <div class="search-box"><input style="color: #000;" type="text" placeholder="enter city" id="t1"></div>
+
+            <div class="search-button">
+                <button style="color: #000;" onclick="fun(this)"> SEARCH</button>
+            </div>
+        </div>
+        <div class="weather-main">
+            <div class="temp">
+                <div class="city-name">
+                    <p id="title">city</p>
+                </div>
+                <div class="min-max">
+                    <div class="max-temp">
+                        <p>MAX <br><span id="temp"></span></p>
+                    </div>
+                    <div class="min-temp">
+                        <p>MIN <br><span id="hum"></span></p>
+                    </div>
+                </div>
+
+                <div class="clear">
+                    <p id="clr"></p>
+                </div>
+                <div class="img" id="img">
+                    <img src="" id="img1" alt="" srcset="">
+                </div>
+                <div class="temp-c">
+                    <p><span id="mayur"></span>&#8451;</p>
+                </div>
+
+            </div>
+            <script src="main.js"></script>
+</body>
+
+</html>
